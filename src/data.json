@@ -1,0 +1,81 @@
+{
+    "carrera": "Administracion de Empresas",
+    "materias":[
+        {
+            "nivel":"A",
+            "codigo":1301001,
+            "nombre":"Administracion General",
+            "grupos":[
+                {
+                    "grupo": "01",
+                    "docente":"Villarruel Daza Maria Helen",
+                    "horarios":[
+                        [0,  2, "9:45-11:15", "E520"],
+                        [2,2,"9:45-11:15", "E504"],
+                        [4,2,"9:45-11:15", "E502"]
+                    ]
+                },
+                {
+                    "grupo": "02",
+                    "docente":"Badani Lenz Rafael Fernando",
+                    "horarios":[
+                        [0,3,"11:15-12:45", "E545"],
+                        [2,3,"11:15-12:45", "E545"],
+                        [4,3,"11:15-12:45", "E545"]
+                    ]
+                },
+                {
+                    "grupo": "03",
+                    "docente":"Villarruel Daza Maria Helen",
+                    "horarios":[
+                        [1,2,"11:15-12:45", "E545"],
+                        [2,3,"11:15-12:45", "E545"],
+                        [4,3,"11:15-12:45", "E545"]
+                    ]
+                },
+                {
+                    "grupo": "20",
+                    "docente":"Valdez Zegarra Rafael A",
+                    "horarios":[
+                        [1,9,"11:15-12:45", "E545"],
+                        [4,0,"11:15-12:45", "E545"],
+                        [5,0,"11:15-12:45", "E545"]
+                    ]
+                }
+            ]
+        },
+        {
+            "nivel":"A",
+            "codigo":1301002,
+            "nombre":"Contabilidad I",
+            "grupos":[
+                {
+                    "grupo": "01",
+                    "docente":"de conta",
+                    "horarios":[
+                        [0,2,"9:45-11:15", "E520"],
+                        [2,2,"9:45-11:15", "E504"],
+                        [4,2,"9:45-11:15", "E502"]
+                    ]
+                }
+            ]
+        },
+        {
+            "nivel":"A",
+            "codigo":1301003,
+            "nombre":"Algebra",
+            "grupos":[
+                {
+                    "grupo": "01",
+                    "docente":"por designar",
+                    "horarios":[
+                        [0,2,"9:45-11:15", "E520"],
+                        [2,2,"9:45-11:15", "E504"],
+                        [3,1,"9:45-11:15", "E502"],
+                        [5,1,"9:45-11:15", "E502"]
+                    ]
+                }
+            ]
+        }
+    ]
+}
