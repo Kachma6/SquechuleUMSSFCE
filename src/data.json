@@ -76,6 +76,110 @@
                     ]
                 }
             ]
+        },
+        {
+            "nivel":"A",
+            "codigo":1301004,
+            "nombre":"Metodologia de Investigacion I",
+            "grupos":[
+                {
+                    "grupo": "02",
+                    "docente":"Gusman Brockmann Felipe Hans Wigberto",
+                    "horarios":[
+                        [0,  9, "9:45-11:15", "E520"],
+                        [1,2,"9:45-11:15", "E520"],
+                        [4,9,"9:45-11:15", "E522"]
+                    ]
+                },
+                {
+                    "grupo": "22",
+                    "docente":"Carrillo Fuentes Juan Angel",
+                    "horarios":[
+                        [0,7,"11:15-12:45", "E545"],
+                        [2,7,"11:15-12:45", "E545"],
+                        [4,2,"11:15-12:45", "E545"]
+                    ]
+                },
+                {
+                    "grupo": "23",
+                    "docente":"Zambrana Triveno Jose Emilio",
+                    "horarios":[
+                        [1,4,"11:15-12:45", "E545"],
+                        [2,4,"11:15-12:45", "E545"],
+                        [3,4,"11:15-12:45", "E545"]
+                    ]
+                },
+                {
+                    "grupo": "24",
+                    "docente":"Guerra Toro Maria Elena",
+                    "horarios":[
+                        [0,0,"11:15-12:45", "E545"],
+                        [2,0,"11:15-12:45", "E545"],
+                        [5,1,"11:15-12:45", "E545"]
+                    ]
+                },
+                {
+                    "grupo": "25",
+                    "docente":"Zambrana Triveno Jose Emilio",
+                    "horarios":[
+                        [0,6,"11:15-12:45", "E502"],
+                        [1,6,"11:15-12:45", "E504"],
+                        [3,6,"11:15-12:45", "E504"]
+                    ]
+                }
+            ]
+        },
+        {
+            "nivel":"A",
+            "codigo":1301005,
+            "nombre":"Calculo",
+            "grupos":[
+                {
+                    "grupo": "02",
+                    "docente":"Gusman Brockmann Felipe Hans Wigberto",
+                    "horarios":[
+                        [0,  9, "9:45-11:15", "E520"],
+                        [1,2,"9:45-11:15", "E520"],
+                        [4,9,"9:45-11:15", "E522"]
+                    ]
+                },
+                {
+                    "grupo": "22",
+                    "docente":"Carrillo Fuentes Juan Angel",
+                    "horarios":[
+                        [0,7,"11:15-12:45", "E545"],
+                        [2,7,"11:15-12:45", "E545"],
+                        [4,2,"11:15-12:45", "E545"]
+                    ]
+                },
+                {
+                    "grupo": "23",
+                    "docente":"Zambrana Triveno Jose Emilio",
+                    "horarios":[
+                        [1,4,"11:15-12:45", "E545"],
+                        [2,4,"11:15-12:45", "E545"],
+                        [3,4,"11:15-12:45", "E545"]
+                    ]
+                },
+                {
+                    "grupo": "24",
+                    "docente":"Guerra Toro Maria Elena",
+                    "horarios":[
+                        [0,0,"11:15-12:45", "E545"],
+                        [2,0,"11:15-12:45", "E545"],
+                        [5,1,"11:15-12:45", "E545"]
+                    ]
+                },
+                {
+                    "grupo": "25",
+                    "docente":"Zambrana Triveno Jose Emilio",
+                    "horarios":[
+                        [0,6,"11:15-12:45", "E502"],
+                        [1,6,"11:15-12:45", "E504"],
+                        [3,6,"11:15-12:45", "E504"]
+                    ]
+                }
+            ]
         }
     ]
 }

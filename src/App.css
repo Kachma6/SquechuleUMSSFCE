@@ -1,3 +1,66 @@
+body{
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+}
+#root{
+ 
+}
+.ctn-app{
+
+
+  width: 100%;
+  height: 90vh;
+ 
+}
+.ctn-main{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  
+  
+
+}
+.ctn-header{
+  text-align: center;
+}
+.ctn-menu{
+ overflow-y:auto ; 
+ 
+ padding: 6px;
+ height: 97%;
+ 
+}
+.ctn-menu::-webkit-scrollbar-track
+{
+	/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+	/* border-radius: 10px; */
+	background-color:  rgb(160,107,255);
+}
+
+.ctn-menu::-webkit-scrollbar
+{
+    display: none;
+	width: 8px;
+	background-color:  rgb(160,107,255);
+}
+
+.ctn-menu::-webkit-scrollbar-thumb
+{
+	border-radius: 0 10px;
+	/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3); */
+	background-color:  rgb(160,107,255);
+}
+.ctn-squechule{
+ 
+}
+
+
+
 .table{
   width: 300px;
   height: 300px;
@@ -15,20 +78,48 @@
 .cell{
   height: 100px;
   width: 100px;
-  border: 1px solid black;
+  border: 1px solid rgb(210, 210, 210);
   padding: 10px;
 }
 
 /* TAbla */
 table{
- border: 1px solid black;
+ border: 1px solid rgb(163, 163, 163);
+ border-radius: 8px;
 }
 tr{
   
 }
 td{
-  border: 1px solid black;
+  border: 1px solid rgb(163, 163, 163);
   width: 150px;
   height: 50px;
   text-align: center;
+}
+
+
+
+@media screen and (min-width: 768px){
+  
+}
+@media screen and (max-width: 576px){
+  .ctn-main{
+    display: block;
+    flex-direction: column;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+    
+    
+  
+  }
+  .ctn-squechule{
+   margin-top: 8px;
+   margin-bottom: 8px;
+  }
+  .ctn-menu{
+    
+    height: 500px;
+    
+   }
 }

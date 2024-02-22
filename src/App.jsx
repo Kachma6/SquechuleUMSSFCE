@@ -18,30 +18,28 @@ function App() {
 
     const aux = squechule.slice();
     let arrayUrl = url.split('-')
-    if(materiasSelected.includes(url)){
-      
-      let datosFiltrados = materiasSelected.filter(item=>item != url);
+    if (materiasSelected.includes(url)) {
+
+      let datosFiltrados = materiasSelected.filter(item => item != url);
       let materia = jsonData.materias[Number(arrayUrl[1])]
       setMateriasSelected(datosFiltrados);
       let ArrayHorarios = jsonData.materias[Number(arrayUrl[1])].grupos[Number(arrayUrl[3])].horarios;
       for (let i = 0; i < ArrayHorarios.length; i++) {
         let arrayHorario = ArrayHorarios[i]
-          let contenido = aux[arrayHorario[1]][arrayHorario[0]];
-          if(contenido.find((mat)=> mat.title === materia.nombre && mat.group ===jsonData.materias[Number(arrayUrl[1])].grupos[Number(arrayUrl[3])].grupo)){
-            let datosFil = contenido.filter(item => item.title != materia.nombre && item.group != jsonData.materias[Number(arrayUrl[1])].grupos[Number(arrayUrl[3])].grupo)
-            aux[arrayHorario[1]][arrayHorario[0]] = datosFil;
-          }
-         
-        
+        let contenido = aux[arrayHorario[1]][arrayHorario[0]];
+        if (contenido.find((mat) => mat.title === materia.nombre && mat.group === jsonData.materias[Number(arrayUrl[1])].grupos[Number(arrayUrl[3])].grupo)) {
+          let datosFil = contenido.filter(item => item.title != materia.nombre && item.group != jsonData.materias[Number(arrayUrl[1])].grupos[Number(arrayUrl[3])].grupo)
+          aux[arrayHorario[1]][arrayHorario[0]] = datosFil;
+        }
       }
 
-    }else{
-      
+    } else {
+
       let materia = jsonData.materias[Number(arrayUrl[1])]
       let horarios = jsonData.materias[Number(arrayUrl[1])].grupos[Number(arrayUrl[3])].horarios;
-      
+
       const color = colors[randomNumberInRange(0, 14)];
-  
+
       for (let i = 0; i < horarios.length; i++) {
         let arrayHorario = horarios[i]
         let casilla = {
@@ -52,56 +50,65 @@ function App() {
         }
         if (aux[arrayHorario[1]][arrayHorario[0]] == null) {
           aux[arrayHorario[1]][arrayHorario[0]] = [casilla]
-  
+
         } else {
           let contenido = aux[arrayHorario[1]][arrayHorario[0]];
-          if(!contenido.find((mat)=> mat.title === casilla.title && mat.group === casilla.group)){
+          if (!contenido.find((mat) => mat.title === casilla.title && mat.group === casilla.group)) {
             aux[arrayHorario[1]][arrayHorario[0]] = [...contenido, casilla];
           }
-         
+
         }
       }
-      setMateriasSelected([...materiasSelected,url]);
-  
+      setMateriasSelected([...materiasSelected, url]);
+
     }
     setSquechule(aux)
 
   }
 
- 
+
   console.log(materiasSelected);
   return (
-    <>
-      <h1>Lista de Materias</h1>
-      <div>
-        <MenuMaterias handleGroup={handleGroup} materiasSelect = {materiasSelected } />
-      </div>
-      <table>
-        <tr>
-          <th>Horario</th>
-          <th>Lunes</th>
-          <th>Martes</th>
-          <th>Miercoles</th>
-          <th>Jueves</th>
-          <th>Viernes</th>
-          <th>Sabado</th>
-        </tr>
-        {
-          squechule.map((fila, index) =>
-            <tr>
-              <td>{horas[index]}</td>
-              <td><ContainerSubjects subjects={fila[0]} /></td>
-              <td><ContainerSubjects subjects={fila[1]} /></td>
-              <td><ContainerSubjects subjects={fila[2]} /></td>
-              <td><ContainerSubjects subjects={fila[3]} /></td>
-              <td><ContainerSubjects subjects={fila[4]} /></td>
-              <td><ContainerSubjects subjects={fila[5]} /></td>
+    <div className='ctn-app'>
 
-            </tr>
-          )
-        }
-      </table>
-    </>
+      <div className='ctn-header'>
+        <h1>Lista de Materias</h1>
+      </div>
+      <div className='ctn-main'>
+      <div className='ctn-menu'>
+        <MenuMaterias handleGroup={handleGroup} materiasSelect={materiasSelected} />
+      </div>
+      <div className='ctn-squechule'>
+        <table>
+          <tr>
+            <th>Horario</th>
+            <th>Lunes</th>
+            <th>Martes</th>
+            <th>Miercoles</th>
+            <th>Jueves</th>
+            <th>Viernes</th>
+            <th>Sabado</th>
+          </tr>
+          {
+            squechule.map((fila, index) =>
+              <tr>
+                <td>{horas[index]}</td>
+                <td><ContainerSubjects subjects={fila[0]} /></td>
+                <td><ContainerSubjects subjects={fila[1]} /></td>
+                <td><ContainerSubjects subjects={fila[2]} /></td>
+                <td><ContainerSubjects subjects={fila[3]} /></td>
+                <td><ContainerSubjects subjects={fila[4]} /></td>
+                <td><ContainerSubjects subjects={fila[5]} /></td>
+
+              </tr>
+            )
+          }
+        </table>
+      </div>
+      </div>
+     
+
+    </div>
   )
 }
 

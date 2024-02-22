@@ -1,0 +1,9 @@
+.sub{
+  
+}
+.sub.crashed{
+    border: 2px solid red;
+    background-color: rgb(245, 136, 136);
+    border-radius: 8px;
+    padding: 3px;
+}

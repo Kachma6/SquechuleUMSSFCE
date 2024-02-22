@@ -1,5 +1,6 @@
 .subject{
     background-color: rgb(209, 209, 209);
     border-radius: 8px;
-    
+    padding: 4px;
+    font-size: 0.7rem;
 }
