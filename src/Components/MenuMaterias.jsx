@@ -21,7 +21,7 @@ export const MenuMaterias = ({handleGroup, materiasSelect}) => {
           
           {jsonData.materias[index].grupos.map((grup, i)=>
           materiasSelect.includes("m-"+index+"-g-"+i)
-          ?<div className='ctn-grupo selected' onClick={()=>handleGroup("m-"+index+"-g-"+i)} id={"m-"+index+"-g-"+i}><span>{grup.grupo} : </span>{grup.docente}</div> 
+          ?<div className='ctn-grupo selected' onClick={()=>handleGroup("m-"+index+"-g-"+i)} id={"m-"+index+"-g-"+i}><span className='spam-selected'>{grup.grupo}</span> : {grup.docente}</div> 
           :<div className='ctn-grupo' onClick={()=>handleGroup("m-"+index+"-g-"+i)} id={"m-"+index+"-g-"+i}> <span>{grup.grupo} : </span>{grup.docente}</div>)}
        </div>)}
    </>
