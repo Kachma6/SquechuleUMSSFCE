@@ -1,0 +1,545 @@
+{
+    "carreras":[
+        {
+            "carrera": "Licenciatura en Administracion de Empresas",
+            "materias":[
+                {
+                    "nivel":"A",
+                    "codigo":1301001,
+                    "nombre":"Administracion General",
+                    "grupos":[
+                        {
+                            "grupo": "01",
+                            "docente":"Villarruel Daza Maria Helen",
+                            "horarios":[
+                                [0,  2, "9:45-11:15", "E520"],
+                                [2,2,"9:45-11:15", "E504"],
+                                [4,2,"9:45-11:15", "E502"]
+                            ]
+                        },
+                        {
+                            "grupo": "02",
+                            "docente":"Badani Lenz Rafael Fernando",
+                            "horarios":[
+                                [0,3,"11:15-12:45", "E545"],
+                                [2,3,"11:15-12:45", "E545"],
+                                [4,3,"11:15-12:45", "E545"]
+                            ]
+                        },
+                        {
+                            "grupo": "03",
+                            "docente":"Villarruel Daza Maria Helen",
+                            "horarios":[
+                                [1,2,"11:15-12:45", "E205"],
+                                [2,3,"11:15-12:45", "E503"],
+                                [4,3,"11:15-12:45", "E504"]
+                            ]
+                        },
+                        {
+                            "grupo": "20",
+                            "docente":"Valdez Zegarra Rafael A",
+                            "horarios":[
+                                [1,9,"11:15-12:45", "E201"],
+                                [4,0,"11:15-12:45", "E524"],
+                                [5,0,"11:15-12:45", "E502"]
+                            ]
+                        },
+                        {
+                            "grupo": "21",
+                            "docente":"Sanchez Castellon Juan Felix",
+                            "horarios":[
+                                [0,8,"11:15-12:45", "E545"],
+                                [2,8,"11:15-12:45", "E545"],
+                                [4,8,"11:15-12:45", "E545"]
+                            ]
+                        },
+                        {
+                            "grupo": "22",
+                            "docente":"Vargas Orosco Freddy",
+                            "horarios":[
+                                [0,6,"11:15-12:45", "E205"],
+                                [2,6,"11:15-12:45", "E503"],
+                                [3,6,"11:15-12:45", "E503"]
+                            ]
+                        },
+                        {
+                            "grupo": "23",
+                            "docente":"Torrico Ocampo Enrique",
+                            "horarios":[
+                                [0,0,"11:15-12:45", "E108"],
+                                [2,0,"11:15-12:45", "E202"],
+                                [4,0,"11:15-12:45", "E108"]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nivel":"A",
+                    "codigo":1301002,
+                    "nombre":"Contabilidad I",
+                    "grupos":[
+                        {
+                            "grupo": "01",
+                            "docente":"Perez Amador Mario",
+                            "horarios":[
+                                [1,3,"9:45-11:15", "E545"],
+                                [3,3,"9:45-11:15", "E545"],
+                                [4,3,"9:45-11:15", "E523"]
+                            ]
+                        },
+                        {
+                            "grupo": "02",
+                            "docente":"Perez Amador Mario",
+                            "horarios":[
+                                [1,2,"9:45-11:15", "E523"],
+                                [3,2,"9:45-11:15", "E544"],
+                                [4,2,"9:45-11:15", "E523"]
+                            ]
+                        },
+                        {
+                            "grupo": "03",
+                            "docente":"Mendoza Crespo Jose Antonio",
+                            "horarios":[
+                                [0,2,"9:45-11:15", "E109"],
+                                [1,5,"9:45-11:15", "E106"],
+                                [2,2,"9:45-11:15", "E303"]
+                            ]
+                        },
+                        {
+                            "grupo": "01",
+                            "docente":"Villazon Arandia Ricardo Ivan",
+                            "horarios":[
+                                [0,8,"9:45-11:15", "E503"],
+                                [1,8,"9:45-11:15", "E105"],
+                                [3,8,"9:45-11:15", "E106"]
+                            ]
+                        },
+                        {
+                            "grupo": "20",
+                            "docente":"Maldonado Ulunque Victor Hugo",
+                            "horarios":[
+                                [0,8,"9:45-11:15", "E101"],
+                                [1,8,"9:45-11:15", "E208"],
+                                [3,7,"9:45-11:15", "E102"]
+                            ]
+                        },
+                        {
+                            "grupo": "21",
+                            "docente":"Ferrufino Juarez Jose Marcos",
+                            "horarios":[
+                                [1,8,"9:45-11:15", "E206"],
+                                [2,9,"9:45-11:15", "E103"],
+                                [3,8,"9:45-11:15", "E206"]
+                            ]
+                        },
+                        {
+                            "grupo": "22",
+                            "docente":"Mendoza Crespo Jose Antonio",
+                            "horarios":[
+                                [0,8,"9:45-11:15", "E544"],
+                                [1,8,"9:45-11:15", "E101"],
+                                [2,8,"9:45-11:15", "EPB-1"]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nivel":"A",
+                    "codigo":1301003,
+                    "nombre":"Algebra",
+                    "grupos":[
+                        {
+                            "grupo": "01",
+                            "docente":"Quispe Cabrera Rene",
+                            "horarios":[
+                                [0,2,"9:45-11:15", "E206"],
+                                [2,2,"9:45-11:15", "E203"],
+                                [3,1,"9:45-11:15", "E203"],
+                                [5,1,"9:45-11:15", "E201"]
+                            ]
+                        },
+                        {
+                            "grupo": "02",
+                            "docente":"Cossio MC Galen Limbert Paul",
+                            "horarios":[
+                                [0,2,"9:45-11:15", "E209"],
+                                [1,5,"9:45-11:15", "E102"],
+                                [2,6,"9:45-11:15", "E202"],
+                                [3,2,"9:45-11:15", "E504"]
+                            ]
+                        },
+                        {
+                            "grupo": "04",
+                            "docente":"Iriarte Mercado Edgar Alberto",
+                            "horarios":[
+                                [0,1,"9:45-11:15", "E545"],
+                                [2,1,"9:45-11:15", "E520"],
+                                [4,1,"9:45-11:15", "E522"],
+                                [5,3,"9:45-11:15", "E204"]
+                            ]
+                        },
+                        {
+                            "grupo": "05",
+                            "docente":"Moya Alborracin Martin",
+                            "horarios":[
+                                [1,1,"9:45-11:15", "E504"],
+                                [1,9,"9:45-11:15", "E101"],
+                                [2,8,"9:45-11:15", "E520"],
+                                [3,0,"9:45-11:15", "E502"]
+                            ]
+                        },
+                        {
+                            "grupo": "20",
+                            "docente":"Jaldin Quiroz Rene",
+                            "horarios":[
+                                [0,6,"9:45-11:15", "E203"],
+                                [0,7,"9:45-11:15", "E504"],
+                                [2,7,"9:45-11:15", "E511"],
+                                [3,8,"9:45-11:15", "E523"]
+                            ]
+                        }
+        
+        
+                    ]
+                },
+                {
+                    "nivel":"A",
+                    "codigo":1301004,
+                    "nombre":"Metodologia de Investigacion I",
+                    "grupos":[
+                        {
+                            "grupo": "02",
+                            "docente":"Gusman Brockmann Felipe Hans Wigberto",
+                            "horarios":[
+                                [0,  9, "9:45-11:15", "E520"],
+                                [1,2,"9:45-11:15", "E520"],
+                                [4,9,"9:45-11:15", "E522"]
+                            ]
+                        },
+                        {
+                            "grupo": "22",
+                            "docente":"Carrillo Fuentes Juan Angel",
+                            "horarios":[
+                                [0,7,"11:15-12:45", "E545"],
+                                [2,7,"11:15-12:45", "E545"],
+                                [4,2,"11:15-12:45", "E545"]
+                            ]
+                        },
+                        {
+                            "grupo": "23",
+                            "docente":"Zambrana Triveno Jose Emilio",
+                            "horarios":[
+                                [1,4,"11:15-12:45", "E545"],
+                                [2,4,"11:15-12:45", "E545"],
+                                [3,4,"11:15-12:45", "E545"]
+                            ]
+                        },
+                        {
+                            "grupo": "24",
+                            "docente":"Guerra Toro Maria Elena",
+                            "horarios":[
+                                [0,0,"11:15-12:45", "E545"],
+                                [2,0,"11:15-12:45", "E545"],
+                                [5,1,"11:15-12:45", "E545"]
+                            ]
+                        },
+                        {
+                            "grupo": "25",
+                            "docente":"Zambrana Triveno Jose Emilio",
+                            "horarios":[
+                                [0,6,"11:15-12:45", "E502"],
+                                [1,6,"11:15-12:45", "E504"],
+                                [3,6,"11:15-12:45", "E504"]
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "nivel":"A",
+                    "codigo":1301005,
+                    "nombre":"Calculo",
+                    "grupos":[
+                        {
+                            "grupo": "02",
+                            "docente":"Gusman Brockmann Felipe Hans Wigberto",
+                            "horarios":[
+                                [0,  9, "9:45-11:15", "E520"],
+                                [1,2,"9:45-11:15", "E520"],
+                                [4,9,"9:45-11:15", "E522"]
+                            ]
+                        },
+                        {
+                            "grupo": "22",
+                            "docente":"Carrillo Fuentes Juan Angel",
+                            "horarios":[
+                                [0,7,"11:15-12:45", "E545"],
+                                [2,7,"11:15-12:45", "E545"],
+                                [4,2,"11:15-12:45", "E545"]
+                            ]
+                        },
+                        {
+                            "grupo": "23",
+                            "docente":"Zambrana Triveno Jose Emilio",
+                            "horarios":[
+                                [1,4,"11:15-12:45", "E545"],
+                                [2,4,"11:15-12:45", "E545"],
+                                [3,4,"11:15-12:45", "E545"]
+                            ]
+                        },
+                        {
+                            "grupo": "24",
+                            "docente":"Guerra Toro Maria Elena",
+                            "horarios":[
+                                [0,0,"11:15-12:45", "E545"],
+                                [2,0,"11:15-12:45", "E545"],
+                                [5,1,"11:15-12:45", "E545"]
+                            ]
+                        },
+                        {
+                            "grupo": "25",
+                            "docente":"Zambrana Triveno Jose Emilio",
+                            "horarios":[
+                                [0,6,"11:15-12:45", "E502"],
+                                [1,6,"11:15-12:45", "E504"],
+                                [3,6,"11:15-12:45", "E504"]
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "carrera": "Licenciatura en Economia",
+            "materias":[
+                {
+                    "nivel":"A",
+                    "codigo":1301001,
+                    "nombre":"Administracion General",
+                    "grupos":[
+                        {
+                            "grupo": "01",
+                            "docente":"Villarruel Daza Maria Helen",
+                            "horarios":[
+                                [0,  2, "9:45-11:15", "E520"],
+                                [2,2,"9:45-11:15", "E504"],
+                                [4,2,"9:45-11:15", "E502"]
+                            ]
+                        },
+                        {
+                            "grupo": "02",
+                            "docente":"Badani Lenz Rafael Fernando",
+                            "horarios":[
+                                [0,3,"11:15-12:45", "E545"],
+                                [2,3,"11:15-12:45", "E545"],
+                                [4,3,"11:15-12:45", "E545"]
+                            ]
+                        },
+                        {
+                            "grupo": "03",
+                            "docente":"Villarruel Daza Maria Helen",
+                            "horarios":[
+                                [1,2,"11:15-12:45", "E205"],
+                                [2,3,"11:15-12:45", "E503"],
+                                [4,3,"11:15-12:45", "E504"]
+                            ]
+                        },
+                        {
+                            "grupo": "20",
+                            "docente":"Valdez Zegarra Rafael A",
+                            "horarios":[
+                                [1,9,"11:15-12:45", "E201"],
+                                [4,0,"11:15-12:45", "E524"],
+                                [5,0,"11:15-12:45", "E502"]
+                            ]
+                        },
+                        {
+                            "grupo": "21",
+                            "docente":"Sanchez Castellon Juan Felix",
+                            "horarios":[
+                                [0,8,"11:15-12:45", "E545"],
+                                [2,8,"11:15-12:45", "E545"],
+                                [4,8,"11:15-12:45", "E545"]
+                            ]
+                        },
+                        {
+                            "grupo": "22",
+                            "docente":"Vargas Orosco Freddy",
+                            "horarios":[
+                                [0,6,"11:15-12:45", "E205"],
+                                [2,6,"11:15-12:45", "E503"],
+                                [3,6,"11:15-12:45", "E503"]
+                            ]
+                        },
+                        {
+                            "grupo": "23",
+                            "docente":"Torrico Ocampo Enrique",
+                            "horarios":[
+                                [0,0,"11:15-12:45", "E108"],
+                                [2,0,"11:15-12:45", "E202"],
+                                [4,0,"11:15-12:45", "E108"]
+                            ]
+                        }
+                    ]
+                }
+               
+            ]
+        },
+        {
+            "carrera": "Licenciatura en Contaduría Pública",
+            "materias":[
+                {
+                    "nivel":"A",
+                    "codigo":1301001,
+                    "nombre":"Administracion General",
+                    "grupos":[
+                        {
+                            "grupo": "01",
+                            "docente":"Villarruel Daza Maria Helen",
+                            "horarios":[
+                                [0,  2, "9:45-11:15", "E520"],
+                                [2,2,"9:45-11:15", "E504"],
+                                [4,2,"9:45-11:15", "E502"]
+                            ]
+                        },
+                        {
+                            "grupo": "02",
+                            "docente":"Badani Lenz Rafael Fernando",
+                            "horarios":[
+                                [0,3,"11:15-12:45", "E545"],
+                                [2,3,"11:15-12:45", "E545"],
+                                [4,3,"11:15-12:45", "E545"]
+                            ]
+                        },
+                        {
+                            "grupo": "03",
+                            "docente":"Villarruel Daza Maria Helen",
+                            "horarios":[
+                                [1,2,"11:15-12:45", "E205"],
+                                [2,3,"11:15-12:45", "E503"],
+                                [4,3,"11:15-12:45", "E504"]
+                            ]
+                        },
+                        {
+                            "grupo": "20",
+                            "docente":"Valdez Zegarra Rafael A",
+                            "horarios":[
+                                [1,9,"11:15-12:45", "E201"],
+                                [4,0,"11:15-12:45", "E524"],
+                                [5,0,"11:15-12:45", "E502"]
+                            ]
+                        },
+                        {
+                            "grupo": "21",
+                            "docente":"Sanchez Castellon Juan Felix",
+                            "horarios":[
+                                [0,8,"11:15-12:45", "E545"],
+                                [2,8,"11:15-12:45", "E545"],
+                                [4,8,"11:15-12:45", "E545"]
+                            ]
+                        },
+                        {
+                            "grupo": "22",
+                            "docente":"Vargas Orosco Freddy",
+                            "horarios":[
+                                [0,6,"11:15-12:45", "E205"],
+                                [2,6,"11:15-12:45", "E503"],
+                                [3,6,"11:15-12:45", "E503"]
+                            ]
+                        },
+                        {
+                            "grupo": "23",
+                            "docente":"Torrico Ocampo Enrique",
+                            "horarios":[
+                                [0,0,"11:15-12:45", "E108"],
+                                [2,0,"11:15-12:45", "E202"],
+                                [4,0,"11:15-12:45", "E108"]
+                            ]
+                        }
+                    ]
+                }
+               
+            ]
+        },
+        {
+            "carrera": "Licenciatura en Ingeniería Financiera",
+            "materias":[
+                {
+                    "nivel":"A",
+                    "codigo":1301001,
+                    "nombre":"Administracion General",
+                    "grupos":[
+                        {
+                            "grupo": "01",
+                            "docente":"Villarruel Daza Maria Helen",
+                            "horarios":[
+                                [0,  2, "9:45-11:15", "E520"],
+                                [2,2,"9:45-11:15", "E504"],
+                                [4,2,"9:45-11:15", "E502"]
+                            ]
+                        },
+                        {
+                            "grupo": "02",
+                            "docente":"Badani Lenz Rafael Fernando",
+                            "horarios":[
+                                [0,3,"11:15-12:45", "E545"],
+                                [2,3,"11:15-12:45", "E545"],
+                                [4,3,"11:15-12:45", "E545"]
+                            ]
+                        },
+                        {
+                            "grupo": "03",
+                            "docente":"Villarruel Daza Maria Helen",
+                            "horarios":[
+                                [1,2,"11:15-12:45", "E205"],
+                                [2,3,"11:15-12:45", "E503"],
+                                [4,3,"11:15-12:45", "E504"]
+                            ]
+                        },
+                        {
+                            "grupo": "20",
+                            "docente":"Valdez Zegarra Rafael A",
+                            "horarios":[
+                                [1,9,"11:15-12:45", "E201"],
+                                [4,0,"11:15-12:45", "E524"],
+                                [5,0,"11:15-12:45", "E502"]
+                            ]
+                        },
+                        {
+                            "grupo": "21",
+                            "docente":"Sanchez Castellon Juan Felix",
+                            "horarios":[
+                                [0,8,"11:15-12:45", "E545"],
+                                [2,8,"11:15-12:45", "E545"],
+                                [4,8,"11:15-12:45", "E545"]
+                            ]
+                        },
+                        {
+                            "grupo": "22",
+                            "docente":"Vargas Orosco Freddy",
+                            "horarios":[
+                                [0,6,"11:15-12:45", "E205"],
+                                [2,6,"11:15-12:45", "E503"],
+                                [3,6,"11:15-12:45", "E503"]
+                            ]
+                        },
+                        {
+                            "grupo": "23",
+                            "docente":"Torrico Ocampo Enrique",
+                            "horarios":[
+                                [0,0,"11:15-12:45", "E108"],
+                                [2,0,"11:15-12:45", "E202"],
+                                [4,0,"11:15-12:45", "E108"]
+                            ]
+                        }
+                    ]
+                }
+               
+            ]
+        }
+        
+        
+        
+        
+    ]
+
+}

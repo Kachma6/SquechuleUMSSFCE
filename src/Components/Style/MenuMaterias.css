@@ -4,23 +4,43 @@
    border-radius: 8px;
    margin-bottom: 4px;
 }
-
+.ctn-carrara-all{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(208, 246, 170);
+    padding: 8px;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+}
+.ctn-carrara-all.desplegado{
+    
+}
 .ctn-materia {
-    /* border: 1px solid black; */
-    /* border-radius: 8px 8px 0 0; */
+    display: flex;
+    justify-content: space-between;
     padding: 10px;
     font-size: 13px;
     font-style: italic;
 }
+.ctn-materia.show{
+  background-color: red;
+}
 
 .ctn-grupo {
-    background-color: rgb(207, 207, 207);
+    background-color: rgb(224, 224, 224);
     border-radius: 8px;
-    margin: 4px;
+    margin: 4px 8px;
     padding: 6px;
     cursor: pointer;
    
 
+}
+.ctn-grupos{
+    display: none;
+}
+.ctn-grupos.show{
+    display: block;
+  
 }
 .ctn-grupo.selected {
     border: 3px solid black;

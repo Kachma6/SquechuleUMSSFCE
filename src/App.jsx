@@ -1,8 +1,11 @@
 import { useState } from 'react'
 import './App.css';
 import jsonData from "./data.json";
+import jsonAll from './dataAll.json'
 import { ContainerSubjects } from './Components/ContainerSubjects';
 import { MenuMaterias } from './Components/MenuMaterias';
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faFaceSmileWink } from '@fortawesome/free-solid-svg-icons';
 const colors = [
   "#C82A54", "#E3682C", "#E69DEB", "#BBA98B", "#109DFA", "#23BAC4", "#A58ABF", "#E3B075", "#FFF293", "#C9DC92", "#99E6D8", "#FEAEBB", "#109DFA", "#AEDAE2",
 ];
@@ -15,6 +18,7 @@ function App() {
 
   const randomNumberInRange = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
+
   const handleGroup = (url) => {
 
     const aux = squechule.slice();
@@ -22,22 +26,22 @@ function App() {
     if (materiasSelected.includes(url)) {
 
       let datosFiltrados = materiasSelected.filter(item => item != url);
-      let materia = jsonData.materias[Number(arrayUrl[1])]
+      let materia = jsonAll.carreras[Number(arrayUrl[1])].materias[Number(arrayUrl[3])]
       setMateriasSelected(datosFiltrados);
-      let ArrayHorarios = jsonData.materias[Number(arrayUrl[1])].grupos[Number(arrayUrl[3])].horarios;
+      let ArrayHorarios = jsonAll.carreras[Number(arrayUrl[1])].materias[Number(arrayUrl[3])].grupos[Number(arrayUrl[5])].horarios;
       for (let i = 0; i < ArrayHorarios.length; i++) {
         let arrayHorario = ArrayHorarios[i]
         let contenido = aux[arrayHorario[1]][arrayHorario[0]];
-        if (contenido.find((mat) => mat.title === materia.nombre && mat.group === jsonData.materias[Number(arrayUrl[1])].grupos[Number(arrayUrl[3])].grupo)) {
-          let datosFil = contenido.filter(item => item.title != materia.nombre && item.group != jsonData.materias[Number(arrayUrl[1])].grupos[Number(arrayUrl[3])].grupo)
+        if (contenido.find((mat) => mat.title === materia.nombre && mat.group === jsonAll.carreras[Number(arrayUrl[1])].materias[Number(arrayUrl[3])].grupos[Number(arrayUrl[5])].grupo)) {
+          let datosFil = contenido.filter(item => item.title != materia.nombre && item.group != jsonAll.carreras[Number(arrayUrl[1])].materias[Number(arrayUrl[3])].grupos[Number(arrayUrl[5])].grupo)
           aux[arrayHorario[1]][arrayHorario[0]] = datosFil;
         }
       }
 
     } else {
 
-      let materia = jsonData.materias[Number(arrayUrl[1])]
-      let horarios = jsonData.materias[Number(arrayUrl[1])].grupos[Number(arrayUrl[3])].horarios;
+      let materia = jsonAll.carreras[Number(arrayUrl[1])].materias[Number(arrayUrl[3])]
+      let horarios = jsonAll.carreras[Number(arrayUrl[1])].materias[Number(arrayUrl[3])].grupos[Number(arrayUrl[5])].horarios;
 
       const color = colors[randomNumberInRange(0, 14)];
 
@@ -46,7 +50,7 @@ function App() {
         let casilla = {
           "title": materia.nombre,
           "room": arrayHorario[3],
-          "group": jsonData.materias[Number(arrayUrl[1])].grupos[Number(arrayUrl[3])].grupo,
+          "group": jsonAll.carreras[Number(arrayUrl[1])].materias[Number(arrayUrl[3])].grupos[Number(arrayUrl[5])].grupo,
           "color": color
         }
         if (aux[arrayHorario[1]][arrayHorario[0]] == null) {
@@ -67,13 +71,13 @@ function App() {
 
   }
 
-
-  console.log(materiasSelected);
+  
   return (
     <div className='ctn-app'>
 
       <div className='ctn-header'>
-        <h1>Lista de Materias</h1>
+        <h1>Mi Horario </h1>
+       
         <button className={isDesplegated?"menu-responsive-der hidden":"menu-responsive-der"} onClick={()=>setIsDesplegated(!isDesplegated)}>{"<"}</button>
         <button className="menu-responsive-izq" onClick={()=>setIsDesplegated(!isDesplegated)}>{">"}</button>
       </div>
@@ -95,14 +99,14 @@ function App() {
           </tr>
           {
             squechule.map((fila, index) =>
-              <tr>
-                <td>{horas[index]}</td>
-                <td><ContainerSubjects subjects={fila[0]} /></td>
-                <td><ContainerSubjects subjects={fila[1]} /></td>
-                <td><ContainerSubjects subjects={fila[2]} /></td>
-                <td><ContainerSubjects subjects={fila[3]} /></td>
-                <td><ContainerSubjects subjects={fila[4]} /></td>
-                <td><ContainerSubjects subjects={fila[5]} /></td>
+              <tr key={index}>
+                <td key={index+"a"}>{horas[index]}</td>
+                <td key={index+"b"}><ContainerSubjects subjects={fila[0]} /></td>
+                <td key={index+"c"}><ContainerSubjects subjects={fila[1]} /></td>
+                <td key={index+"d"}><ContainerSubjects subjects={fila[2]} /></td>
+                <td key={index+"e"}><ContainerSubjects subjects={fila[3]} /></td>
+                <td key={index+"f"}><ContainerSubjects subjects={fila[4]} /></td>
+                <td key={index+"g"}><ContainerSubjects subjects={fila[5]} /></td>
 
               </tr>
             )
