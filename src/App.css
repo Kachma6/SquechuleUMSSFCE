@@ -35,8 +35,11 @@ body{
  height: 97%;
  
 }
-.menu-responsive{
+.menu-responsive-der{
   display: none;   
+}
+.menu-responsive-izq{
+  display: none;
 }
 .ctn-menu::-webkit-scrollbar-track
 {
@@ -169,9 +172,7 @@ td{
    .menu-responsive-der.hidden{
      visibility: hidden;
    }
-   .menu-responsive-izq.no-desplegado{
-     
-   }
+   
    
    .ctn-menu.desplegado{
     display: none;
