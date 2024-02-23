@@ -10,7 +10,8 @@ const horas = ["06:45", "08:15", "09:45", "11:45", "12:45", "14:45", "15:45", "1
 function App() {
   const [squechule, setSquechule] = useState([[null, null, null, null, null, null], [null, null, null, null, null, null], [null, null, null, null, null, null], [null, null, null, null, null, null], [null, null, null, null, null, null], [null, null, null, null, null, null], [null, null, null, null, null, null], [null, null, null, null, null, null], [null, null, null, null, null, null], [null, null, null, null, null, null]]);
 
-  const [materiasSelected, setMateriasSelected] = useState([])
+  const [materiasSelected, setMateriasSelected] = useState([]);
+  const [isDesplegated, setIsDesplegated]= useState(true);
 
   const randomNumberInRange = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
@@ -73,9 +74,12 @@ function App() {
 
       <div className='ctn-header'>
         <h1>Lista de Materias</h1>
+        <button className={isDesplegated?"menu-responsive-der hidden":"menu-responsive-der"} onClick={()=>setIsDesplegated(!isDesplegated)}>{"<"}</button>
+        <button className="menu-responsive-izq" onClick={()=>setIsDesplegated(!isDesplegated)}>{">"}</button>
       </div>
       <div className='ctn-main'>
-      <div className='ctn-menu'>
+      <div className={isDesplegated?'ctn-menu desplegado':'ctn-menu'}>
+      
         <MenuMaterias handleGroup={handleGroup} materiasSelect={materiasSelected} />
       </div>
       <div className='ctn-squechule'>

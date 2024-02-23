@@ -35,6 +35,9 @@ body{
  height: 97%;
  
 }
+.menu-responsive{
+  display: none;   
+}
 .ctn-menu::-webkit-scrollbar-track
 {
 	/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
@@ -103,6 +106,18 @@ td{
   
 }
 @media screen and (max-width: 576px){
+  .ctn-app{
+
+
+    width: 100vw;
+    height: 90vh;
+   
+  }
+  .ctn-header{
+    text-align: center;
+    width: 100%;
+   
+  }
   .ctn-main{
     display: block;
     flex-direction: column;
@@ -114,12 +129,57 @@ td{
   
   }
   .ctn-squechule{
+    width: 100vw;
    margin-top: 8px;
    margin-bottom: 8px;
+   font-size: 8px;
   }
   .ctn-menu{
     
-    height: 500px;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+     width: 300px;
+      background-color: white;
+      margin-bottom: 10px;
+   }
+   .menu-responsive-der{
+    display: block;
+    position: fixed;
+    right: 10px;
+    top:10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: chartreuse;
+   }
+   .menu-responsive-izq{
+    display: block;
+    position: fixed;
+    left: 10px;
+    top:10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: chartreuse;
     
+    
+   }
+   .menu-responsive-der.hidden{
+     visibility: hidden;
+   }
+   .menu-responsive-izq.no-desplegado{
+     
+   }
+   
+   .ctn-menu.desplegado{
+    display: none;
+   }
+   table{
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 8px;
+    table-layout: fixed;
+    width: 100vw ;
    }
 }
