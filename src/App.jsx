@@ -32,8 +32,10 @@ function App() {
       for (let i = 0; i < ArrayHorarios.length; i++) {
         let arrayHorario = ArrayHorarios[i]
         let contenido = aux[arrayHorario[1]][arrayHorario[0]];
+        console.log(  aux)
         if (contenido.find((mat) => mat.title === materia.nombre && mat.group === jsonAll.carreras[Number(arrayUrl[1])].materias[Number(arrayUrl[3])].grupos[Number(arrayUrl[5])].grupo)) {
-          let datosFil = contenido.filter(item => item.title != materia.nombre && item.group != jsonAll.carreras[Number(arrayUrl[1])].materias[Number(arrayUrl[3])].grupos[Number(arrayUrl[5])].grupo)
+          let datosFil = contenido.filter(item => item.title !== materia.nombre || item.group !== jsonAll.carreras[Number(arrayUrl[1])].materias[Number(arrayUrl[3])].grupos[Number(arrayUrl[5])].grupo)
+          console.log(datosFil)
           aux[arrayHorario[1]][arrayHorario[0]] = datosFil;
         }
       }
