@@ -55,10 +55,11 @@ export const MenuMaterias = ({ handleGroup, materiasSelect }) => {
               </div>
 
             </div>) : <></>}
+            
         </div>)
 
       }
-
+ 
     </>
 
   )

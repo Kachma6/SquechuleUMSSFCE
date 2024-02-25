@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css';
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import jsonAll from './dataAll.json'
 import { ContainerSubjects } from './Components/ContainerSubjects';
 import { MenuMaterias } from './Components/MenuMaterias';
@@ -80,8 +81,8 @@ function App() {
       <div className='ctn-header'>
         <h1>Mi Horario </h1>
        
-        <button className={isDesplegated?"menu-responsive-der hidden":"menu-responsive-der"} onClick={()=>setIsDesplegated(!isDesplegated)}>{"<"}</button>
-        <button className="menu-responsive-izq" onClick={()=>setIsDesplegated(!isDesplegated)}>{">"}</button>
+        <button className={isDesplegated?"menu-responsive-der hidden":"menu-responsive-der"} onClick={()=>setIsDesplegated(!isDesplegated)}><FontAwesomeIcon icon={faChevronLeft} /></button>
+        <button className="menu-responsive-izq" onClick={()=>setIsDesplegated(!isDesplegated)}><FontAwesomeIcon icon={faChevronRight} /></button>
       </div>
       <div className='ctn-main'>
       <div className={isDesplegated?'ctn-menu desplegado':'ctn-menu'}>
@@ -114,10 +115,12 @@ function App() {
             )
           }
         </table>
+        <p>&copy; Kachma - Software</p>
       </div>
+      
       </div>
      
-
+       
     </div>
   )
 }
