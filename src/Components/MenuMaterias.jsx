@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import jsonData from '../data.json';
 import jsonAll from '../dataAll.json';
 import './Style/MenuMaterias.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

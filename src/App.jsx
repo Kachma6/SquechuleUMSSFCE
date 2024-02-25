@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css';
-import jsonData from "./data.json";
+
 import jsonAll from './dataAll.json'
 import { ContainerSubjects } from './Components/ContainerSubjects';
 import { MenuMaterias } from './Components/MenuMaterias';
