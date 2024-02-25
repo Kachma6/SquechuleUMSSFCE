@@ -1153,7 +1153,7 @@
             ]
         },
         {
-            "carrera": "Licenciatura en Contaduria publica",
+            "carrera": "Licenciatura en Contaduria Publica",
             "materias":[
                 {
                     "nivel":"A",
@@ -1408,10 +1408,10 @@
                             "grupo": "23",
                             "docente":"Siles Rodriguez Adolfo Jorge",
                             "horarios":[
-                                [1,4,"11:15-12:45", "E512"],
-                                [2,4,"11:15-12:45", "E207"],
-                                [3,4,"11:15-12:45", "E207"],
-                                [4,8,"11:15-12:45", "E518"]
+                                [1,4,"11:15-12:45", "E543"],
+                                [2,4,"11:15-12:45", "E544"],
+                                [3,4,"11:15-12:45", "E545"],
+                                [4,8,"11:15-12:45", "E101"]
                             ]
                         },
                         {
