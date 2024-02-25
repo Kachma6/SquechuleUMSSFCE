@@ -7,7 +7,7 @@ import { MenuMaterias } from './Components/MenuMaterias';
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faFaceSmileWink } from '@fortawesome/free-solid-svg-icons';
 const colors = [
-  "#C82A54", "#E3682C", "#E69DEB", "#BBA98B", "#109DFA", "#23BAC4", "#A58ABF", "#E3B075", "#FFF293", "#C9DC92", "#99E6D8", "#FEAEBB", "#109DFA", "#AEDAE2",
+ "#ecd6c0","#a2c8cc","#483d8b","#e6e6fa", "#ffd700","#deb887","#8fbc8f","#556b2f","#b0c4de","#4682b4", "#40e0d0","#C82A54", "#E3682C", "#E69DEB", "#BBA98B", "#109DFA", "#23BAC4", "#A58ABF", "#E3B075", "#FFF293", "#C9DC92", "#99E6D8", "#FEAEBB", "#109DFA", "#AEDAE2",
 ];
 const horas = ["06:45", "08:15", "09:45", "11:45", "12:45", "14:45", "15:45", "17:45", "18:45", "20:45"];
 function App() {
@@ -45,7 +45,7 @@ function App() {
       let materia = jsonAll.carreras[Number(arrayUrl[1])].materias[Number(arrayUrl[3])]
       let horarios = jsonAll.carreras[Number(arrayUrl[1])].materias[Number(arrayUrl[3])].grupos[Number(arrayUrl[5])].horarios;
 
-      const color = colors[randomNumberInRange(0, 14)];
+      const color = colors[randomNumberInRange(0, 25)];
 
       for (let i = 0; i < horarios.length; i++) {
         let arrayHorario = horarios[i]
