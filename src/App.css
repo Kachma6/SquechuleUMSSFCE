@@ -1,3 +1,7 @@
+
+:root{
+ color-scheme: light;
+}
 body{
   background-color: white;
   margin: 0;
@@ -6,9 +10,7 @@ body{
   font-family: 'Outfit', sans-serif;
   font-size: 12px;
 }
-#root{
- 
-}
+
 .ctn-app{
 
 
