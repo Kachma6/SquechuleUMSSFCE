@@ -79,7 +79,7 @@ function App() {
     <div className='ctn-app'>
 
       <div className='ctn-header'>
-        <h1>Mi Horario </h1>
+        <h1>Mi Horario Hola</h1>
        
         <button className={isDesplegated?"menu-responsive-der hidden":"menu-responsive-der"} onClick={()=>setIsDesplegated(!isDesplegated)}><FontAwesomeIcon icon={faChevronLeft} /></button>
         <button className="menu-responsive-izq" onClick={()=>setIsDesplegated(!isDesplegated)}><FontAwesomeIcon icon={faChevronRight} /></button>
